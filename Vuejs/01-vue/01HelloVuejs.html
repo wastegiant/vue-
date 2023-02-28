@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" name="waste_giant">
+  <meta http-equiv="refresh" content="40"><!--每30s刷新一次页面-->
+  <title>don't waste time</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!--双括号用来解析vue语法 -->
+  <div id="app">{{message}}</div>
+  <script src="../js/vue.js"></script>
+  <script>
+    //let(变量）/const(常量) var没有作用域 es6后淘汰
+    let app = new Vue({
+      //el用来挂载标签
+      el: '#app',
+      data: {//定义数据
+        message: 'hello weorld!'
+      }
+    })
+
+  </script>
+  <div>
+    <p>Hello World!!!</p>
+  </div>
+  <div>
+    <h1>实践是检验真理的唯一标准</h1>
+    <h2>多动手操作，你可以的</h2>
+  </div>
+
+  <div><img src="911.jpg" width="400px"></div>
+</body>
+
+</html>

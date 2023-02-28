@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <!-- v-for指令能够完成数据遍历-->
+        <li v-for="item in movies">{{item}}</li>
+    </ul>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    const app=new Vue({
+        el:'#app',
+        data:{
+            movies:['流浪地球','功夫熊猫','星际穿越','发条橙']
+        }
+    })
+</script>
+</body>
+</html>
